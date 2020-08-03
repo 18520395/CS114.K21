@@ -45,9 +45,11 @@ Lựa chọn mô hình:
 - Logistic Regression
 
 Đánh giá & kết luận:
-- Tuy tỷ lệ đúng của model khá cao nhưng model lại phản ứng không tốt với các ảnh dùng để test
+- ccuracy score của model: 
++ SVM: 84,23%
++ Logistic Regression: 85,66%
+- Tuy tỷ lệ dự đoán đúng của model khá cao nhưng model lại phản ứng không tốt với các ảnh dùng để test
 Nguyên nhân: Do dataset được xây dựng trên một số loài cụ thể và các loài rắn ở khu vực Ấn Độ nên các loài ngoài vùng sẽ khó nhận biết
-- 
 
 Khó khăn:
 - Vì hình ảnh các loài rắn không thực sự nhiều và bị trùng lấp nhiều nên xây dựng dataset khó
