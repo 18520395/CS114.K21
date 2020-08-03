@@ -17,25 +17,18 @@ Trong đó: 4808 ảnh rắn độc | 4082 ảnh rắn độc
 Tiền xử lý dữ liệu:
 - Thay đổi kích thước ảnh để phù hợp với mạng VGG16 đang sử dụng:
 
-#resize images to (224,224)
 list_image = []
 for (j, imagePath) in enumerate(image_path):
     image = load_img(imagePath, target_size=(224, 224))
     image = img_to_array(image)
-    
     image = np.expand_dims(image, 0)
     image = imagenet_utils.preprocess_input(image)
-    
     list_image.append(image)
-  
 list_image = np.vstack(list_image)
 
 Trích xuất đặc trưng:
-
-#featuring 
+ 
 features = model.predict(list_image)
-
-#3 dims tensor ConvNet -> 1 dim vector
 features = features.reshape((features.shape[0], 512*7*7))
 
 Chia dữ liệu Training/Testing: 85% | 15%
