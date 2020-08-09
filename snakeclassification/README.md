@@ -12,7 +12,7 @@ Dataset:
 
 Dataset:
 - Tổng số ảnh: 8890 ảnh
-Trong đó: 4808 ảnh rắn độc | 4082 ảnh rắn độc
+Trong đó: 4808 ảnh rắn độc | 4082 ảnh rắn  độc
 
 Tiền xử lý dữ liệu:
 - Thay đổi kích thước ảnh để phù hợp với mạng VGG16 đang sử dụng:
