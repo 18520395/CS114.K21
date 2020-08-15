@@ -12,7 +12,7 @@ Dataset:
 
 Dataset: https://drive.google.com/file/d/1x5RF0s1zbmxgKfSTAIf8v0mfer5dQmE9/view?usp=sharing
 - Tổng số ảnh: 8890 ảnh
-Trong đó: 4808 ảnh rắn độc | 4082 ảnh rắn  độc
+Trong đó: 4808 ảnh rắn độc | 4082 ảnh rắn không độc
 
 Tiền xử lý dữ liệu:
 - Thay đổi kích thước ảnh để phù hợp với mạng VGG16 đang sử dụng:
@@ -33,7 +33,7 @@ Trích xuất đặc trưng:
 features = model.predict(list_image)
 features = features.reshape((features.shape[0], 512*7*7))
 ```
-Chia dữ liệu Training/Testing: 85% | 15%
+Chia dữ liệu Training/Testing: 80% | 20%
 
 VGG16:
 - VGG16 là mạng convolutional neural network được đề xuất bởi K. Simonyan and A. Zisserman, University of Oxford. Model sau khi train bởi mạng VGG16 đạt độ chính xác 92.7% top-5 test trong dữ liệu ImageNet gồm 14 triệu hình ảnh thuộc 1000 lớp khác nhau
@@ -43,11 +43,13 @@ VGG16:
 Lựa chọn mô hình:
 - SVM (Support Vector Machine)
 - Logistic Regression
+- Random Forest Classifier 
 
 Đánh giá & kết luận:
 - ccuracy score của model: 
-+ SVM: 84,02%
-+ Logistic Regression: 86,12%
++ SVM: 0. 
++ Logistic Regression: 0.83
++ Random Forest Classifier: 0.8
 - Tuy tỷ lệ dự đoán đúng của model khá cao nhưng model lại phản ứng không tốt với các ảnh dùng để test
 Nguyên nhân: Do dataset được xây dựng trên một số loài cụ thể và các loài rắn ở khu vực Ấn Độ nên các loài ngoài vùng sẽ khó nhận biết
 
