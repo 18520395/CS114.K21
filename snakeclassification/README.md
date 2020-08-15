@@ -51,7 +51,9 @@ Lựa chọn mô hình:
 + Logistic Regression: 0.83
 + Random Forest Classifier: 0.80
 - Tuy tỷ lệ dự đoán đúng của model khá cao nhưng model lại phản ứng không tốt với các ảnh dùng để test
-Nguyên nhân: Do dataset được xây dựng trên một số loài cụ thể và các loài rắn ở khu vực Ấn Độ nên các loài ngoài vùng sẽ khó nhận biết
+- Có thể gặp phải overfitting
+
+Nguyên nhân: Do dataset được xây dựng trên một số loài cụ thể nên các loài ngoài vùng sẽ khó nhận biết, dataset chưa nhiều
 
 Khó khăn:
 - Vì hình ảnh các loài rắn không thực sự nhiều và bị trùng lấp nhiều nên xây dựng dataset khó
