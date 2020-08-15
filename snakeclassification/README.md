@@ -10,7 +10,7 @@ Dataset:
 - From Kaggle: https://www.kaggle.com/sameeharahman/preprocessed-snake-images/data#
 - From github: https://github.com/arjun921/Indian-Snakes-Dataset
 
-Dataset:
+Dataset: https://drive.google.com/file/d/1x5RF0s1zbmxgKfSTAIf8v0mfer5dQmE9/view?usp=sharing
 - Tổng số ảnh: 8890 ảnh
 Trong đó: 4808 ảnh rắn độc | 4082 ảnh rắn  độc
 
