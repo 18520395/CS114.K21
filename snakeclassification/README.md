@@ -46,16 +46,16 @@ Lựa chọn mô hình:
 - Random Forest Classifier 
 
 Đánh giá & kết luận:
-- ccuracy score của model: 
-+ SVM: 0. 
+- Accuracy score của model: 
++ SVM: 0.81
 + Logistic Regression: 0.83
-+ Random Forest Classifier: 0.8
++ Random Forest Classifier: 0.80
 - Tuy tỷ lệ dự đoán đúng của model khá cao nhưng model lại phản ứng không tốt với các ảnh dùng để test
 Nguyên nhân: Do dataset được xây dựng trên một số loài cụ thể và các loài rắn ở khu vực Ấn Độ nên các loài ngoài vùng sẽ khó nhận biết
 
 Khó khăn:
 - Vì hình ảnh các loài rắn không thực sự nhiều và bị trùng lấp nhiều nên xây dựng dataset khó
-- Các hình ảnh về các loài rắn độc ít 
-- Việc tự thu thập data mang tính bất khả thi cao 
+- Các hình ảnh về các loài rắn không độc ít 
+- Việc tự thu thập data trong thực tế mang tính bất khả thi cao 
 
 
